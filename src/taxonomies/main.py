@@ -1,6 +1,7 @@
 import requests
 from utils.utils import save_data
 from dotenv import dotenv_values
+from utils.utils import *
 
 config = dotenv_values(".env")
 
@@ -13,8 +14,6 @@ URLS={
 }
 
 def main():
-
-
 
     payload = f"client_id={EMSI_CLIENT_ID}&client_secret={EMSI_CLIENT_SECRET}&grant_type=client_credentials&scope=emsi_open"
     headers = {'content-type': 'application/x-www-form-urlencoded'}
@@ -34,6 +33,7 @@ def main():
         skills = response.json()
         skills = skills['data']    
 
+        skills = prep_taxonomie(skills)
         save_data(skills, 'hardskills.json')
 
 if __name__ == '__main__':
