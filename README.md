@@ -21,9 +21,41 @@ In addition to job postings, two taxonomies were created, one for hard-skills an
 ```
 ├── README.md
 ├── public
+│   ├── job_sample.png
+│   └── tax_sample.png
 └── src
-    ├── model
-    └── scrap 
+    ├── experiment
+    │   ├── __init__.py
+    │   ├── tests.ipynb
+    │   └── utils
+    │       ├── __init__.py
+    │       └── utils.py
+    ├── scrap
+    │   ├── README.md
+    │   ├── output
+    │   │   ├── catho_jobs.json
+    │   │   └── remotar_jobs.json
+    │   ├── remotar.csv
+    │   ├── remotar.json
+    │   ├── scrap
+    │   │   ├── __init__.py
+    │   │   ├── items.py
+    │   │   ├── middlewares.py
+    │   │   ├── pipelines.py
+    │   │   ├── settings.py
+    │   │   └── spiders
+    │   │       ├── __init__.py
+    │   │       ├── catho_job_spider.py
+    │   │       └── remotar_spyder.py
+    │   └── scrapy.cfg
+    └── taxonomies
+        ├── README.md
+        ├── main.py
+        └── utils
+            ├── __init__.py
+            ├── model_utils.py
+            └── utils.py
+
 ```
 
 ## Requirements
