@@ -15,6 +15,9 @@ In addition to job postings, two taxonomies were created, one for hard-skills an
 
 ![sample of taxonomies](public/tax_sample.png)
 
+## Model
+
+...
 
 ## What's in this repository?
 
@@ -59,3 +62,5 @@ In addition to job postings, two taxonomies were created, one for hard-skills an
 ```
 
 ## Requirements
+
+For requirements, please, check the `requirements.txt` file.
